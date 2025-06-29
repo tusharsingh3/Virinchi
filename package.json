@@ -1,0 +1,20 @@
+{
+  "name": "virinchi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusharsingh3/Virinchi.git"
+  },
+  "author": "Tushar Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tusharsingh3/Virinchi/issues"
+  },
+  "homepage": "https://github.com/tusharsingh3/Virinchi#readme"
+}
