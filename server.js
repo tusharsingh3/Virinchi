@@ -17,8 +17,8 @@ const limiter = rateLimit({
     max: 100, // limit each IP to 100 requests per windowMs
     message: {
         success: false,
-        message: 'Too many requests from this IP, please try again later.'
-    }
+        message: 'Too many requests from this IP, please try again later.',
+    },
 });
 
 // Rate limiting specifically for API routes (more restrictive)
@@ -27,8 +27,8 @@ const apiLimiter = rateLimit({
     max: 10, // limit each IP to 10 API requests per windowMs
     message: {
         success: false,
-        message: 'Too many API requests from this IP, please try again later.'
-    }
+        message: 'Too many API requests from this IP, please try again later.',
+    },
 });
 
 // --- Middleware ---
@@ -37,20 +37,17 @@ app.use(limiter); // Apply rate limiting to all routes
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 // --- Define Routes ---
 // Use the API routes for enquiries with additional rate limiting
 app.use('/api/enquiry', apiLimiter, require('./routes/api/enquiry'));
 // Use the page routes for serving HTML
 app.use('/', require('./routes/pages'));
 
-
 // --- 404 Handler ---
 // This should come after all other routes have been defined
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'pages', '404.html'));
 });
-
 
 // --- Start Server ---
 const PORT = process.env.PORT || 3000;

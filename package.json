@@ -1,45 +1,51 @@
 {
-  "name": "virinchi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "start": "nodemon server.js",
-    "start:prod": "node server.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
-  },
-  "dependencies": {
-    "dotenv": "^17.0.1",
-    "express": "^4.21.2",
-    "express-rate-limit": "^7.5.1",
-    "mongoose": "^8.16.1",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "eslint": "^9.30.0",
-    "jest": "^30.0.3",
-    "nodemon": "^3.0.0",
-    "prettier": "^3.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tusharsingh3/Virinchi.git"
-  },
-  "author": "Tushar Singh",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tusharsingh3/Virinchi/issues"
-  },
-  "homepage": "https://github.com/tusharsingh3/Virinchi#readme",
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "html"],
-    "testMatch": ["**/tests/**/*.test.js"]
-  }
+    "name": "virinchi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "start": "nodemon server.js",
+        "start:prod": "node server.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "dotenv": "^17.0.1",
+        "express": "^4.21.2",
+        "express-rate-limit": "^7.5.1",
+        "mongoose": "^8.16.1",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.30.0",
+        "jest": "^30.0.3",
+        "nodemon": "^3.0.0",
+        "prettier": "^3.6.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tusharsingh3/Virinchi.git"
+    },
+    "author": "Tushar Singh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tusharsingh3/Virinchi/issues"
+    },
+    "homepage": "https://github.com/tusharsingh3/Virinchi#readme",
+    "jest": {
+        "testEnvironment": "node",
+        "collectCoverage": true,
+        "coverageDirectory": "coverage",
+        "coverageReporters": [
+            "text",
+            "lcov",
+            "html"
+        ],
+        "testMatch": [
+            "**/tests/**/*.test.js"
+        ]
+    }
 }

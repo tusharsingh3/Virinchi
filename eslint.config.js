@@ -1,6 +1,6 @@
 module.exports = [
     {
-        ignores: ['coverage/**', 'node_modules/**', '.env', '.env.*']
+        ignores: ['coverage/**', 'node_modules/**', '.env', '.env.*'],
     },
     {
         languageOptions: {
@@ -19,16 +19,16 @@ module.exports = [
                 setTimeout: 'readonly',
                 clearTimeout: 'readonly',
                 setInterval: 'readonly',
-                clearInterval: 'readonly'
-            }
+                clearInterval: 'readonly',
+            },
         },
         rules: {
             'no-unused-vars': 'warn',
             'no-console': 'off',
-            'indent': ['error', 4],
-            'quotes': ['error', 'single'],
-            'semi': ['error', 'always'],
-        }
+            indent: ['error', 4],
+            quotes: ['error', 'single'],
+            semi: ['error', 'always'],
+        },
     },
     {
         files: ['tests/**/*.js'],
@@ -41,8 +41,8 @@ module.exports = [
                 beforeAll: 'readonly',
                 afterAll: 'readonly',
                 beforeEach: 'readonly',
-                afterEach: 'readonly'
-            }
-        }
-    }
+                afterEach: 'readonly',
+            },
+        },
+    },
 ];

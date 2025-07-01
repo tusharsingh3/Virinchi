@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // This schema will store the last sequence number for a given model.
 const counterSchema = new mongoose.Schema({
     _id: { type: String, required: true }, // The name of the model, e.g., 'enquiry'
-    seq: { type: Number, default: 0 }      // The last sequence number used
+    seq: { type: Number, default: 0 }, // The last sequence number used
 });
 
 // Create the model from the schema
