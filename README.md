@@ -61,6 +61,21 @@ Virinchi Architects is a full-stack web application built with Node.js, Express,
     PORT=3000
     ```
 
+    **Local Development Override (Optional)**
+    
+    For local development, you can create a `.env.local` file that will override values from `.env`:
+
+    ```bash
+    cp .env.local.example .env.local
+    ```
+
+    The `.env.local` file is loaded first and takes precedence over `.env`. This allows you to:
+    - Use different database connections for local development
+    - Override port numbers without modifying the main `.env` file
+    - Keep local development settings separate from shared configuration
+
+    **Note**: `.env.local` is git-ignored and should contain your personal development settings.
+
 4. **Start the application**
 
     ```bash

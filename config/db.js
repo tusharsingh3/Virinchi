@@ -1,6 +1,5 @@
 // config/db.js
 const mongoose = require('mongoose');
-require('dotenv').config();
 
 // Get MongoDB connection string from environment variables
 const MONGO_URI = process.env.MONGO_URI;
