@@ -3,6 +3,15 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
+const fs = require('fs');
+
+// Load environment variables with .env.local override support
+// Load .env.local first (if it exists), then .env as fallback
+if (fs.existsSync(path.join(__dirname, '.env.local'))) {
+    require('dotenv').config({ path: path.join(__dirname, '.env.local') });
+}
+require('dotenv').config(); // This will load .env but won't override existing variables
+
 const connectDB = require('./config/db');
 
 // Initialize Express app
