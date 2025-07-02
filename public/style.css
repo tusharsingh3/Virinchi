@@ -309,7 +309,6 @@ body {
     color: #a94442;
 }
 
-
 /* Footer Styling */
 .new-site-footer {
     background-color: #1c1c1c;
@@ -401,7 +400,6 @@ body {
     line-height: 1.5;
     text-align: right;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 992px) {

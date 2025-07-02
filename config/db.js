@@ -1,8 +1,9 @@
 // config/db.js
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-// Replace this with your connection string from MongoDB Atlas
-const MONGO_URI = 'mongodb+srv://ts360523:tushar123@virinchi.dmyb0dh.mongodb.net/?retryWrites=true&w=majority&appName=Virinchi';
+// Get MongoDB connection string from environment variables
+const MONGO_URI = process.env.MONGO_URI;
 
 const connectDB = async () => {
     try {
