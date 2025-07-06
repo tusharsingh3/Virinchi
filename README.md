@@ -1,10 +1,10 @@
-# Virinchi Architects
+# Virinchi Architect
 
-A modern web application for Virinchi Architects, featuring a professional website with contact management system.
+A modern web application for Virinchi Architect, featuring a professional website with contact management system.
 
 ## Description
 
-Virinchi Architects is a full-stack web application built with Node.js, Express, and MongoDB. The application provides a professional online presence for the architecture firm, including company information, services showcase, and a contact management system for client inquiries.
+Virinchi Architect is a full-stack web application built with Node.js, Express, and MongoDB. The application provides a professional online presence for the architecture firm, including company information, services showcase, and a contact management system for client inquiries.
 
 ## Features
 
@@ -93,7 +93,7 @@ Virinchi Architects is a full-stack web application built with Node.js, Express,
 
 ### For Visitors
 
-- Browse the homepage to learn about Virinchi Architects
+- Browse the homepage to learn about Virinchi Architect
 - View the About Us page for company information
 - Use the Contact page to submit inquiries
 - Receive unique reference IDs for tracking inquiries
@@ -190,7 +190,7 @@ npm test
 
 ## Contributing
 
-We welcome contributions to improve Virinchi Architects! Here's how you can help:
+We welcome contributions to improve Virinchi Architect! Here's how you can help:
 
 ### Getting Started
 

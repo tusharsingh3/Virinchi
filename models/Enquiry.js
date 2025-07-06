@@ -52,6 +52,10 @@ const enquirySchema = new mongoose.Schema(
             type: Boolean,
             default: false,
         },
+        isDeleted: {
+            type: Boolean,
+            default: false,
+        },
     },
     { timestamps: true }
 );
@@ -80,4 +84,4 @@ enquirySchema.pre('validate', function (next) {
     next();
 });
 
-module.exports = mongoose.model('Enquiry', enquirySchema);
+module.exports = mongoose.model('Enquiry', enquirySchema, 'Enquiries');

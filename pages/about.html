@@ -3,38 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Learn about Virinchi Architects - our story, team, and commitment to delivering exceptional architectural design and construction services."
-        />
-        <meta
-            name="keywords"
-            content="about Virinchi Architects, architectural team, company story, professional architects, design philosophy"
-        />
-        <meta name="author" content="Virinchi Architects" />
-        <meta name="robots" content="index, follow" />
-
-        <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://virinchi-architects.com/aboutUs" />
-        <meta property="og:title" content="About Us - Virinchi Architects" />
+        <meta property="og:title" content="About Us - Virinchi Architect" />
         <meta
             property="og:description"
-            content="Learn about Virinchi Architects - our story, team, and commitment to delivering exceptional architectural services."
+            content="Learn about Virinchi Architect - our story, team, and commitment to delivering exceptional architectural services."
         />
         <meta property="og:image" content="/images/logo.jpg" />
-
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://virinchi-architects.com/aboutUs" />
-        <meta property="twitter:title" content="About Us - Virinchi Architects" />
+        <meta property="twitter:title" content="About Us - Virinchi Architect" />
         <meta
             property="twitter:description"
-            content="Learn about Virinchi Architects - our story, team, and commitment to delivering exceptional architectural services."
+            content="Learn about Virinchi Architect - our story, team, and commitment to delivering exceptional architectural services."
         />
         <meta property="twitter:image" content="/images/logo.jpg" />
-
-        <title>About Us - Virinchi Architects</title>
+        <title>About Us - Virinchi Architect</title>
         <link rel="stylesheet" href="/style.css" />
         <link rel="icon" type="image/jpeg" href="/images/logo.jpg" />
         <!-- Font Awesome for icons -->
@@ -42,6 +28,166 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <style>
+            .main-content {
+                width: 100%;
+            }
+
+            .about-title {
+                color: #e7cea1;
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 2.5rem 0 2rem 0;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+            .about-cards-section {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 2rem;
+                margin-bottom: 1rem;
+                overflow-x: auto;
+                padding-bottom: 13px;
+            }
+
+            .about-card {
+                background: #fff;
+                border-radius: 1rem;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+                max-width: 240px;
+                min-width: 240px;
+                flex: 1 1 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem 1.3rem 1.7rem 1.3rem;
+                transition: box-shadow 0.2s;
+                font-size: 1.05rem;
+            }
+
+            .about-card h3 {
+                font-size: 1.13rem;
+                color: #e7cea1;
+                margin-bottom: 0.7rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .about-card ul {
+                margin: 0.8rem 0 0.8rem 1.2rem;
+                padding: 0;
+            }
+
+            .about-card ul li {
+                margin-bottom: 0.5rem;
+            }
+
+            .about-card hr {
+                width: 40px;
+                height: 2px;
+                background: #e7cea1;
+                border: none;
+                margin: 0.8rem 0 1.2rem 0;
+            }
+
+            @media (max-width: 1200px) {
+                .about-cards-section {
+                    flex-wrap: wrap;
+                    gap: 1.2rem;
+                }
+
+                .about-card {
+                    min-width: 250px;
+                    max-width: 99vw;
+                }
+            }
+
+            @media (max-width: 950px) {
+                .about-cards-section {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.3rem;
+                }
+
+                .about-card {
+                    min-width: 200px;
+                    max-width: 99vw;
+                }
+            }
+
+            /* Founders section styles remain unchanged */
+            .founders-section {
+                margin: 3rem 0 2rem 0;
+                text-align: center;
+            }
+
+            .founders-title {
+                color: #e7cea1;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                letter-spacing: 2px;
+            }
+
+            .founders-cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 2rem;
+                overflow-x: auto;
+                margin-bottom: 2rem;
+                padding-bottom: 20px;
+            }
+
+            .founder-card {
+                background: #fff;
+                border-radius: 1rem;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+                max-width: 340px;
+                min-width: 260px;
+                flex: 1 1 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 1.2rem 1.5rem 1.2rem;
+                transition: box-shadow 0.2s;
+            }
+
+            .founder-card img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                margin-bottom: 1.2rem;
+                background: #eee;
+            }
+
+            .founder-name {
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin-bottom: 0.2rem;
+                color: #1c1c1c;
+            }
+
+            .founder-role {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #e7cea1;
+                margin-bottom: 1rem;
+            }
+
+            .founder-desc {
+                font-size: 0.96rem;
+                color: #333;
+                text-align: left;
+            }
+        </style>
     </head>
 
     <body>
@@ -55,7 +201,7 @@
                     />
                 </a>
             </div>
-            <div class="header-title">Virinchi Architects</div>
+            <div class="header-title">Virinchi Architect</div>
             <nav class="main-nav">
                 <a href="/home">Home</a>
                 <a href="/aboutUs" class="active">About Us</a>
@@ -64,8 +210,188 @@
         </header>
 
         <main class="main-content">
-            <h1>About Our Company</h1>
-            <p>Here you can learn more about our history, our mission, and our team.</p>
+            <!-- Meet the Founders Section -->
+            <section class="founders-section">
+                <div class="founders-title">Meet the Founders</div>
+                <div class="founders-cards">
+                    <!-- Card 1 -->
+                    <div class="founder-card">
+                        <img src="/images/card1.jpg" alt="Vaibhav Kumar" loading="lazy" />
+                        <div class="founder-name">Vaibhav Kumar</div>
+                        <div class="founder-role">
+                            Co-Founder | Architect | MURP | Commercial Design & Planning Specialist
+                        </div>
+                        <div class="founder-desc">
+                            Vaibhav is a commercially driven architect and an Urban and Regional
+                            Planning (MURP) postgraduate, bringing a unique blend of architectural
+                            creativity and urban foresight. He has worked extensively on large-scale
+                            commercial and office projects, contributing to both the design and
+                            construction stages of high-rise developments, business parks, and
+                            mixed-use layouts.<br /><br />
+                            Vaibhav’s technical skills span AutoCAD, Revit, SketchUp, Lumion, and
+                            V-Ray, allowing him to bridge concept and construction with design
+                            precision and impactful visualizations. At Virinchi Architect, he leads
+                            commercial project planning, urban design integration, and visual
+                            communication—delivering market-responsive and functionally rich
+                            environments.
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="founder-card">
+                        <img src="/images/card2.jpg" alt="Sumit Chakrawarty" loading="lazy" />
+                        <div class="founder-name">Sumit Chakrawarty</div>
+                        <div class="founder-role">
+                            Co-Founder | Architect | PMC & BIM Strategist | Data Center Design
+                            Specialist
+                        </div>
+                        <div class="founder-desc">
+                            Sumit is a licensed architect and a postgraduate in Construction
+                            Engineering and Management, known for his strategic thinking and
+                            precision in project execution. With hands-on experience in the design
+                            and planning of data centers, he brings a deep understanding of
+                            technically complex environments where performance, security, and
+                            operational efficiency are critical.<br /><br />
+                            His expertise lies in Project Management Consultancy (PMC), BIM-led
+                            workflows, feasibility studies, and cost optimization. He is highly
+                            proficient in Building Information Modeling (BIM), using it as a
+                            backbone for multidisciplinary coordination and digital project
+                            delivery. At Virinchi Architect, Sumit leads project strategy, execution
+                            planning, and innovation—particularly in data center infrastructure,
+                            office spaces, and residential developments.
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="founder-card">
+                        <img src="/images/card3.jpg" alt="Vertika Arya" loading="lazy" />
+                        <div class="founder-name">Vertika Arya</div>
+                        <div class="founder-role">
+                            Co-Founder | Interior Designer | M.Des. (Interior Design) | Experiential
+                            Space Curator
+                        </div>
+                        <div class="founder-desc">
+                            Vertika Arya holds a Master’s in Interior Design and brings artistic
+                            vision with technical depth to interior environments. Her design
+                            sensibility blends modern aesthetics with contextual relevance,
+                            transforming spaces into immersive and meaningful experiences.<br /><br />
+                            With a strong foundation in residential, commercial, and workplace
+                            interiors, Vertika specializes in spatial planning, material
+                            exploration, lighting design, and user-centric customization. Her work
+                            focuses on harmonizing functionality with visual storytelling, making
+                            every project—from homes to offices—reflect both personality and
+                            purpose. At Virinchi Architect, she leads the Interior Design division,
+                            ensuring excellence from concept to execution.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Meet the Founders Section -->
+
+            <!-- About The Company Section -->
+            <div class="about-title">About The Company</div>
+            <section class="about-cards-section">
+                <!-- Card 1: About Virinchi Architects -->
+                <div class="about-card">
+                    <h3>About Virinchi Architects</h3>
+                    <p>
+                        Virinchi Architects is a multidisciplinary architecture and design firm
+                        founded by three passionate and forward-thinking professionals—Sumit
+                        Chakrawarty, Vaibhav Kumar, and Vertika Arya. The firm was established with
+                        a shared vision: to create impactful, efficient, and timeless spaces that
+                        reflect both human aspirations and technical excellence.<br /><br />
+                        At Virinchi Architects, we offer a holistic range of services across three
+                        core verticals:
+                    </p>
+                    <ul>
+                        <li>Project Management Consultancy (PMC)</li>
+                        <li>Architectural Planning &amp; Design</li>
+                        <li>Interior Design</li>
+                    </ul>
+                    <p>
+                        With a deep belief in design as a transformative tool, we approach each
+                        project with critical thinking, contextual awareness, and a collaborative
+                        spirit. Our process integrates creativity with practicality, ensuring that
+                        each project—whether a technical data center or a cozy interior—is crafted
+                        with intention and delivered with precision.
+                    </p>
+                </div>
+                <!-- Card 2: Our Focus Areas -->
+                <div class="about-card">
+                    <h3>Our Focus Areas</h3>
+                    <ul>
+                        <li>
+                            <strong>Data Centers:</strong><br />
+                            We understand the highly technical and secure nature of data center
+                            infrastructure. Our team is experienced in planning and coordinating
+                            data centers that meet international standards in redundancy, energy
+                            efficiency, and layout optimization.
+                        </li>
+                        <li>
+                            <strong>Corporate and Commercial Spaces:</strong><br />
+                            From high-rise office towers to mixed-use commercial hubs, we deliver
+                            spaces that blend user comfort, branding identity, and operational
+                            efficiency—tailored to the business and its people.
+                        </li>
+                        <li>
+                            <strong>Residential Architecture:</strong><br />
+                            We design homes that are functional, thoughtful, and emotionally
+                            resonant. From individual residences to multi-unit developments, our
+                            residential work reflects a strong understanding of user lifestyle and
+                            spatial quality.
+                        </li>
+                        <li>
+                            <strong>Interior Design for All Typologies:</strong><br />
+                            Our interior design wing adds another dimension of detail and
+                            personalization. Whether it’s a home, an office, or a commercial space,
+                            we design interiors that reflect the client’s identity while enhancing
+                            usability and ambiance.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card 3: What Sets Us Apart -->
+                <div class="about-card">
+                    <h3>What Sets Us Apart</h3>
+                    <ul>
+                        <li>
+                            <strong>Multidisciplinary Collaboration:</strong><br />
+                            With our unique blend of backgrounds in architecture, urban planning,
+                            construction management, and interior design, we approach each project
+                            from multiple lenses—ensuring comprehensive solutions that address both
+                            macro and micro scales.
+                        </li>
+                        <li>
+                            <strong>BIM-Driven Design:</strong><br />
+                            We are committed to technology-enabled design and delivery. Our use of
+                            Building Information Modeling (BIM) allows for smarter coordination,
+                            real-time visualization, and smoother execution of complex projects.
+                        </li>
+                        <li>
+                            <strong>Client-Centric Approach:</strong><br />
+                            We believe that every project begins with listening. Our designs evolve
+                            through meaningful engagement with clients, stakeholders, and end-users,
+                            ensuring spaces that are responsive, sustainable, and emotionally
+                            engaging.
+                        </li>
+                        <li>
+                            <strong>End-to-End Services:</strong><br />
+                            From the first sketch to the final handover, we stay involved at every
+                            stage—planning, design, coordination, documentation, visualization,
+                            project management, and handover—delivering full-cycle support for every
+                            project.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card 4: Our Vision -->
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be recognized as a new-generation design and project management firm that
+                        creates spaces of enduring value—spaces that are functional, beautiful, and
+                        responsive to the evolving needs of society, technology, and the
+                        environment.
+                    </p>
+                </div>
+            </section>
+            <!-- End About The Company Section -->
         </main>
 
         <footer class="new-site-footer">
@@ -73,66 +399,65 @@
                 <div class="footer-column footer-logo-area">
                     <img
                         src="/images/logo.jpg"
-                        alt="Virinchi Architects Logo"
+                        alt="Virinchi Architect Logo"
                         class="footer-logo"
                         onerror="this.onerror=null;this.src='https://placehold.co/150/1c1c1c/e7cea1?text=LOGO';"
                     />
-                    <p>Virinchi Architects</p>
+                    <p>Virinchi Architect</p>
                 </div>
-
                 <div class="footer-column footer-links-area">
                     <div class="link-category">
-                        <h4>Residential</h4>
-                        <p>ABC</p>
+                        <h4>Designing & Planning</h4>
+                        <ul style="margin:0; padding-left:10px;">
+                            <li>Residencial Properties</li>
+                            <li>Commercial & Office Space</li>
+                        </ul>
                     </div>
                     <div class="link-category">
                         <h4>Data Centre</h4>
-                        <p>DEF</p>
+                        <ul style="margin:0; padding-left:10px;">
+                            <li>NTT Data Center</li>
+                            <li>ST Telemedia</li>
+                            <li>Ananat Raj Cloud Pvt. Ltd.</li>
+                        </ul>
                     </div>
                     <div class="link-category">
                         <h4>Interior</h4>
-                        <p>GHI</p>
+                        <ul style="margin:0; padding-left:10px;">
+                            <li>Office Spaces</li>
+                            <li>Living Space</li>
+                        </ul>
                     </div>
                 </div>
-
                 <div class="footer-column footer-contact-area">
                     <h4>Get in touch with us <i class="fa-solid fa-plus-circle"></i></h4>
                     <div class="social-icons">
                         <a
-                            href="https://www.instagram.com"
+                            href="https://www.instagram.com/virinchi_architects?igsh=MWNrY2NkYmlwdzlqdw=="
                             target="_blank"
                             rel="noopener"
                             aria-label="Instagram"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
                         <a
-                            href="https://www.linkedin.com"
+                            href="https://www.linkedin.com/in/virinchi-architects-8306a5373/"
                             target="_blank"
                             rel="noopener"
                             aria-label="LinkedIn"
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                        <a
-                            href="https://www.facebook.com"
-                            target="_blank"
-                            rel="noopener"
-                            aria-label="Facebook"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a
-                            href="mailto:contact@example.com"
-                            target="_blank"
-                            rel="noopener"
-                            aria-label="Gmail"
-                            ><i class="fas fa-envelope"></i
-                        ></a>
-                        <a href="tel:+1234567890" aria-label="Phone"
-                            ><i class="fas fa-phone"></i
-                        ></a>
+                        >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="mailto:virinchiarchitect@gmail.com" aria-label="Mail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:8178596746" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
                     </div>
-                    <p class="copyright">
-                        &copy; 2025 Virinchi Architects.<br />All Rights Reserved
-                    </p>
                 </div>
             </div>
         </footer>
